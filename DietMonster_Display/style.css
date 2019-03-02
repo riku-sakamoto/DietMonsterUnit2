@@ -1,12 +1,47 @@
-.box18{
-  display: inline-block;
-  margin:2em 0;
-  position: relative;
-  padding: 0.25em 1em;
-  border: solid 2px #ffcb8a;
-  border-radius: 3px 0 3px 0;
+@font-face {
+	font-family: PixelMplus10-Regular;
+	src: url("Font/PixelMplus10-Regular.ttf") format("truetype");
 }
-.box18:before,.box18:after
+
+body{
+  
+  /* 画像ファイルの指定 */
+  background-image: url("picture/map.png");
+   
+  /* 画像を常に天地左右の中央に配置 */
+  background-position: center center;
+   
+  /* 画像をタイル状に繰り返し表示しない */
+  background-repeat: no-repeat;
+   
+  /* コンテンツの高さが画像の高さより大きい時、動かないように固定 */
+  background-attachment: fixed;
+   
+  /* 表示するコンテナの大きさに基づいて、背景画像を調整 */
+  background-size: cover;
+   
+  /* 背景画像が読み込まれる前に表示される背景のカラー */
+  background-color: #464646;
+}
+
+.box1{
+  display: inline-block;
+  margin-right: auto;
+  margin-left: 10%;
+  position: absolute;
+  padding: 20px;
+  border: solid 2px #ffcb8a;
+  /* width: 1000px; */
+  width: 75%;
+  height: 100px;
+  top: 75%;
+  background-color: rgba(255, 255, 255, 0.4);
+  font-size: 40px;
+  font-family: PixelMplus10-Regular;
+	src: url("Font/PixelMplus10-Regular.ttf") format("truetype");
+}
+
+.box1:before,.box1:after
 {
   content: '';
   position: absolute;
@@ -15,25 +50,25 @@
   border: solid 2px #ffcb8a;
   border-radius: 50%;
 }
-.box18:after {
+.box1:after {
   top:-12px;
   left:-12px;
 }
-.box18:before {
+.box1:before {
   bottom:-12px;
   right:-12px;
 }
-.box18 p {
+.box1 p {
   margin: 0; 
   padding: 0;
 }
 
-.box29 {
+.box2 {
   display: inline-block;
   margin: 2em 0;
   background: #dcefff;
 }
-.box29 .box-title {
+.box2 .box-title {
   font-size: 1.2em;
   background: #5fb3f5;
   padding: 4px;
@@ -42,7 +77,7 @@
   font-weight: bold;
   letter-spacing: 0.05em;
 }
-.box29 p {
+.box2 p {
   padding: 15px 20px;
   margin: 0;
 }
@@ -97,4 +132,23 @@ dialog::backdrop {
 
 .btn-flat-horizontal-border:hover span {
   padding: 0.1em 0;
+}
+
+/* 重ねるボックスの設定 */
+.layer-in{
+  /* ボックス配置指定 */
+  position: absolute;
+  margin: 5% 34%;
+  text-align: center;
+}
+
+/* みずどりの基本設定 */
+#MonsterImage{
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: auto;
+  height: 350px;
 }
