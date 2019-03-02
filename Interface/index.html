@@ -1,9 +1,16 @@
 <html>
-  <form>
-    <button id="DietButton">Push</button>
-    <input id="page_play" type="button" value="再生" onclick="page.play()" disabled="1"/>
-<input id="page_stop" type="button" value="停止" onclick="page.stop()" disabled="1"/>
-  </form>
+<head>
+  <script src="audiojs/audio.min.js"></script>
   
+</head>
+<body>
+    <div style="display:none;">
+        <audio src="music/02_Money,Money,Money.m4a" preload="auto" loop></audio>
+    </div>
+    <button id="DietButton">Push</button>
+    <button id="MusicStart">MusicStart</button>
+    <button id="MusicStop">MusicStop</button>
+</body>
+  <script src="music.js"></script>
   <script src="local_app.js"></script>  
 </html>
