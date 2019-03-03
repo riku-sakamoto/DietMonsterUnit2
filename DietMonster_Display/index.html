@@ -1,19 +1,18 @@
 <html>
 
 <head>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
+<!-- <body id="BackgroundImage" onclick="changeBackgroundImage()" alt=""> -->
 <body>
-  <div class="box18">
-    <p id="point">YOUR SCORE:2<p>
-        <p id="monster_image">Monster Image</p>
-        <p id="rank">YOUR RANK: No.1</p>
+  <div class="box1">
+    <p id="point">YOUR WEIGHT:<a id="WeightNumber">50</a></p>
+    <p id="rank">YOUR RANK:<a id="LanK">1</a></p>
   </div>
 
-  <br>
+  <div class="box2">
 
-  <div class="box29">
     <div class="box-title">
       <button id="show">IF YOU NEED SOMETHING MORE, SEE IT</button>
     </div>
@@ -30,17 +29,13 @@
         <button id="close" type="button">close</button>
       </footer>
     </dialog>
+
   </div>
-  <script>
-    var dialog = document.querySelector('dialog');
-    var btn_show = document.getElementById('show');
-    var btn_close = document.getElementById('close');
-    btn_show.addEventListener('click', function () {
-      dialog.show();}, false);
-    btn_close.addEventListener('click', function () {
-      dialog.close();}, false);
-  </script>
+
+  <div class="layer-in">
+    <img id="MonsterImage" onclick="changeCharacterImage()" src="picture/mon3/mon_059.gif" alt="">
+  </div>
 
 </body>
-
+<script src="JavaScript.js"></script>
 </html>
